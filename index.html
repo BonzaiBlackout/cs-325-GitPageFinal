@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Arianna's Homepage</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-teal w3-card w3-left-align w3-large">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-teal" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+    <a href="/WorkPage.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Skills and Work</a>
+    <a href="Volunteer_Fun.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Volunteer and Fun!</a>
+  </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+    <a href="/WorkPage.html" class="w3-bar-item w3-button w3-padding-large">Skills and Work Experience</a>
+    <a href="Volunteer_Fun.html" class="w3-bar-item w3-button w3-padding-large">Volunteer and Fun!</a>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="w3-container w3-teal w3-center" style="padding:128px 16px">
+  <h1 class="w3-margin w3-jumbo">Arianna's Landing Page!</h1>
+  
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href="https://www.linkedin.com/in/arianna--cooper/">My Linkedin!</a></button>
+  <button class="w3-button w3-black w3-padding-large w3-large w3-margin-top"><a href = "MyResume.pdf">My Resume!</a></button>
+</header>
+
+<!-- First Grid -->
+<div class="w3-row-padding w3-padding-64 w3-container">
+  <div class="w3-content">
+    <div class="w3-twothird">
+      <h1>About Me!</h1>
+      <h5 class="w3-padding-32">
+      So I am a current Sophomore at SIUE, I love to volunteer and hang out with my friends. I am passionate about Computer Science as I have been into coding ever since I used to do mini projects on scratch as a kid. I hope to eventually go into the Cybersecurity field one day and possibly dive into the penetration testing aspect of it! Feel free to explore the page and learn more about me!</h5>
+    </div>
+
+    <div class="w3-third w3-center">
+        <img src="images/IMG_3405 (1).jpg" style="width:100%" alt="Avatar">
+    </div>
+  </div>
+</div>
+
+
+
+<script>
+// Used to toggle the menu on small screens when clicking on the menu button
+function myFunction() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
